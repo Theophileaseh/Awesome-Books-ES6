@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Fredoka", sans-serif;
+}
+
+.menu-link-color {
+  color: skyblue;
+}
+
+.date-time {
+  margin: 35px;
+}
+
+.real-date-time {
+  float: right;
+}
+
+.logos {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 15px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 2px solid #000;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  flex: 1;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home {
+  display: block;
+  padding: 15px 0;
+  flex: 1;
+}
+
+#home h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.books-container {
+  background-color: #fff;
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.book button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sub-book {
+  display: flex;
+  gap: 1rem;
+}
+
+.changeColor {
+  background-color: #ecedee;
+}
+
+#addBook {
+  display: none;
+  padding: 15px 0;
+}
+
+#addBook h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 5px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.book-form input {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.book-form button {
+  align-self: flex-end;
+  padding: 5px;
+  width: 20%;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f6f1f1;
+}
+
+#contact {
+  display: none;
+  padding: 15px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  margin-left: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 15px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
