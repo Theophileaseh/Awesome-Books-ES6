@@ -1,7 +1,7 @@
 const formSubmit = document.querySelector('.book-form');
 
-let booksArray = [];
-
+import {booksArray} from './storage.js';
+import {addBook} from './storage.js';
 
 formSubmit.addEventListener('submit', (event) => {
   if (title.value === '' || author.value === '') {

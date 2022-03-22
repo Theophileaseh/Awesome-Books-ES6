@@ -3,9 +3,9 @@ const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const formSubmit = document.querySelector('.book-form');
 
-let booksArray = [];
+export let booksArray = [];
 
-const addBook = () => {
+export const addBook = () => {
   let booksCode = '';
   booksArray.forEach((element, index) => {
     const { title, author } = element;
@@ -58,3 +58,4 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   addBook();
 });
+
