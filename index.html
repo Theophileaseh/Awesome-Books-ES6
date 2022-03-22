@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link href="index.css" rel="stylesheet">
+  <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+  
+    <!-- Header -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html" class="logos">Awesome Books</a>
+        </div>
+        <div class="mobile-button"></div>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-items border-item">
+              <a href="#home" id="lists" class="nav-items">List</a>
+            </li>
+            <li class="menu-items border-item">
+              <a href="#addBook" id="adds" class="nav-items">Add New</a>
+            </li>
+            <li class="menu-items">
+              <a href="#contact" id="contacts" class="nav-items">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="date-time">
+        <p class="real-date-time"></p>
+      </div>
+      <section class="page" id="home">
+        <h2>All Awesome Books</h2>
+        <div class="books-container"></div>
+      </section>
+      <section class="page" id="addBook">
+        <h2>Add a new book</h2>
+        <div class="form-container">
+          <form class="book-form">
+            <input type="text" name="title" id="title" placeholder="Title" />
+            <input type="text" name="author" id="author" placeholder="Author" />
+            <button type="submit">Add</button>
+          </form>
+        </div>
+      </section>
+      <section class="page" id="contact">
+        <h2>Contact information</h2>
+        <div class="contact-container">
+          <p class="text">
+            Do have any question or you just want to say "Hello"? <br />
+            You can reach out to us
+          </p>
+          <div class="contact-details">
+            <ul>
+              <li class="text">Our e-mail: mail@mail.com</li>
+              <li class="text">Our phone number: 0044586534422</li>
+              <li class="text">Our address: Streetname 22, 84503 city, country</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">Copyright ...</div>
+    </footer>
+
+  <script type="module" src="index.js"></script>  
+</body>
+</html>
