@@ -1,6 +1,6 @@
 const booksList = document.querySelector('.books-container');
 
-export const booksArray = [];
+export let booksArray = [];
 
 export const addBook = () => {
   let booksCode = '';
