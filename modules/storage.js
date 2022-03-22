@@ -13,7 +13,7 @@ export const addBook = () => {
       booksCode += `
         <div class="book changeColor">
             <div class="sub-book">
-              <p>${title}</p>
+              <p>"${title}" by</p>
               <p>${author}</p>
             </div>
             <button type="submit" class="delete" onclick='removeBook("${title}")'>Remove</button>
@@ -23,7 +23,7 @@ export const addBook = () => {
       booksCode += `
         <div class="book">
           <div class="sub-book">
-            <p>${title}</p>
+            <p>"${title}" by</p>
             <p>${author}</p>
           </div>
           <button type="submit" class="delete" onclick='removeBook("${title}")'>Remove</button>
@@ -45,12 +45,12 @@ window.addEventListener('DOMContentLoaded', () => {
   if (books === null) {
     booksArray = [
       {
-        title: 'Book one',
-        author: 'Kait',
+        title: 'The Goods',
+        author: 'Theophile A.',
       },
       {
-        title: 'Book two',
-        author: 'Cham',
+        title: 'Funny Bone',
+        author: 'NTA',
       },
     ];
   } else {

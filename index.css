@@ -12,7 +12,7 @@ body {
 }
 
 .menu-link-color {
-  color: skyblue;
+  color: skyblue !important;
 }
 
 .date-time {
