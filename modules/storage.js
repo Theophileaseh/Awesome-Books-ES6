@@ -1,9 +1,9 @@
 const booksList = document.querySelector('.books-container');
 
-export let booksArray = [];
+export const booksArray = [];
 
 export const addBook = () => {
-  var booksCode = '';
+  let booksCode = '';
   booksArray.forEach((element, index) => {
     const { title, author } = element;
     if (index % 2 === 0) {
