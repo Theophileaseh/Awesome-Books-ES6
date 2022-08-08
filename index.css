@@ -188,17 +188,17 @@ main {
   font-weight: 400;
 }
 
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .contact-container .text {
   margin-bottom: 30px;
 }
 
 .contact-details {
   margin-left: 40px;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 .footer {
@@ -238,7 +238,7 @@ main {
     top: 50px;
     margin: 20px;
   }
-  
+
   .mobile-button.active {
     background-image: url('./img/Icon-Cancel.svg');
     height: 25px;
@@ -261,7 +261,7 @@ main {
     gap: 25px;
     display: none;
   }
-  
+
   .header .menu-list.active {
     display: flex;
     position: absolute;
@@ -276,12 +276,12 @@ main {
     gap: 52px;
     background: #000000db;
   }
-  
+
   .menu-items {
     list-style: none;
     width: 80%;
   }
-  
+
   .nav-items {
     text-decoration: none;
     display: flex;

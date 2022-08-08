@@ -3,7 +3,7 @@ const booksList = document.querySelector('.books-container');
 // const author = document.querySelector('#author');
 // const formSubmit = document.querySelector('.book-form');
 
-export const booksArray = [];
+export let booksArray = []; // eslint-disable-line
 
 export const addBook = () => {
   let booksCode = '';
