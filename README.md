@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books ES6
 
-> Awesome Books ES6
+> Awesome Books is a web application built using htm, css, javaScript, luxon and npm, used to store and display a list of books from various authors.
 
 ## Website Link
 
@@ -20,33 +20,36 @@
 - HTML
 - Javascript
 - Luxon Library
+- npm
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+``VS Code or other Code Editor``
+
+``"Live server" configured``
 
 ### Install
 
+``git clone https://github.com/Theophileaseh/Awesome-Books-ES6.git``
+
+``cd Awesome-Books-ES6``
+
 ### Usage
 
-### Run tests
-
-### Deployment
+``Locate index.htm file and open with live server``
+<!--``run "npm i"``<br/><br/>
+``run "npm start"``-->
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Nwachan Theophile**
 
 - GitHub: [@Theophileash](https://github.com/Theophileaseh)
 - Twitter: [@NwachanT](https://twitter.com/NwachanT)

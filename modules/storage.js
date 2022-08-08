@@ -1,9 +1,9 @@
 const booksList = document.querySelector('.books-container');
-const title = document.querySelector('#title');
-const author = document.querySelector('#author');
-const formSubmit = document.querySelector('.book-form');
+// const title = document.querySelector('#title');
+// const author = document.querySelector('#author');
+// const formSubmit = document.querySelector('.book-form');
 
-export let booksArray = [];
+export let booksArray = []; // eslint-disable-line
 
 export const addBook = () => {
   let booksCode = '';
@@ -58,4 +58,3 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   addBook();
 });
-
