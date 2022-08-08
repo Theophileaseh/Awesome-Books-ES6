@@ -1,3 +1,4 @@
+/* eslint-disable */
 import './modules/storage.js';
 import './modules/pageLoad.js';
 import './modules/formSubmit.js';
@@ -15,3 +16,4 @@ p.innerText = DateTime.now().toLocaleString(
     minute: '2-digit',
   },
 );
+/* eslint-enable */
