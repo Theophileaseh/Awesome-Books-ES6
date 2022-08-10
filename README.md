@@ -35,9 +35,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-``git clone https://github.com/Theophileaseh/Awesome-Books-ES6.git``
+      git clone https://github.com/Theophileaseh/Awesome-Books-ES6.git
 
-``cd Awesome-Books-ES6``
+      cd Awesome-Books-ES6
 
 ### Usage
 
