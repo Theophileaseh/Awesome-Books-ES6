@@ -5,6 +5,7 @@ const author = document.querySelector('#author');
 const formSubmit = document.querySelector('.book-form');
 
 function alerts(message) {
+  // eslint-disable-next-line no-alert
   alert(message);
 }
 
@@ -19,8 +20,8 @@ formSubmit.addEventListener('submit', (event) => {
     author: author.value,
   };
 
-  const result = booksArray.filter((elem) => (elem.title === bookInput.title && 
-    elem.author === bookInput.author));
+  const result = booksArray.filter((elem) => (elem.title === bookInput.title
+    && elem.author === bookInput.author));
 
   if (result.length !== 0) {
     alerts('Sorry Book already exists');
@@ -30,6 +31,6 @@ formSubmit.addEventListener('submit', (event) => {
     title.value = '';
     author.value = '';
 
-  alerts('Congratulations. Book added!');
+    alerts('Congratulations. Book added!');
   }
 });

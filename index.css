@@ -21,12 +21,13 @@ body {
 }
 
 .date-time {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
   margin: 35px;
 }
 
 .real-date-time {
   float: right;
+  color: #292323;
 }
 
 .logos {
@@ -63,7 +64,6 @@ button:hover {
   padding: 0 20px;
 }
 
-
 .nav-items {
   text-decoration: none;
   color: #fff;
@@ -89,10 +89,6 @@ button:hover {
   font-weight: 500;
   margin-bottom: 15px;
   color: #414188;
-}
-
-.real-date-time {
-  color: #292323;
 }
 
 .books-container {

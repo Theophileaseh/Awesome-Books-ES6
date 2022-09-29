@@ -1,6 +1,5 @@
 const booksList = document.querySelector('.books-container');
 
-
 export let booksArray = []; // eslint-disable-line
 
 export const addBook = () => {
