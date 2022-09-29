@@ -11,10 +11,12 @@
 <body>
   
     <!-- Header -->
-    <header>
-      <div class="header">
+    <header class="header">
+      <div class="sub-header">
         <div class="logo">
-          <a href="index.html" class="logos">Awesome Books</a>
+          <a href="index.html" class="logos">
+            <img class="logo-img" src="img/awesome-books.png" alt="Awesome Books">
+          </a>
         </div>
         <div class="mobile-button"></div>
         <nav class="menu">
@@ -34,7 +36,7 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="main-section">
       <div class="date-time">
         <p class="real-date-time"></p>
       </div>
@@ -43,7 +45,7 @@
         <div class="books-container"></div>
       </section>
       <section class="page" id="addBook">
-        <h2>Add a new book</h2>
+        <h2 class="add-book">Add a new book</h2>
         <div class="form-container">
           <form class="book-form">
             <input type="text" name="title" id="title" placeholder="Title" />
@@ -71,8 +73,10 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer">Copyright ...</div>
+    <footer class="footer">
+      <div class="sub-footer">
+        <p class="footer-text">Copyright &copy; <span class="footer-year"></span> - All Rights Reserved - <span class="footer-site">Awesome Books</span></p>
+      </div>
     </footer>
 
   <script type="module" src="index.js"></script>  

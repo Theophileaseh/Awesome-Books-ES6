@@ -15,12 +15,15 @@ export const addBook = () => {
         </div>`
 
   ));
-  booksList.innerHTML = allBooks;
+  if (booksArray.length === 0) {
+    booksList.innerHTML = '<h3 class="no-books-notification">Sorry there are no books available</h3>';
+  } else {
+    booksList.innerHTML = allBooks;
+  }
   localStorage.setItem('booksData', JSON.stringify(booksArray));
 };
 
 window.removeBook = (title, author) => {
-  console.log(author, title)
   booksArray = booksArray.filter((elem) => elem.title !== title || elem.author !== author);
   addBook();
 };

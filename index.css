@@ -11,11 +11,17 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 
+.header {
+  background: #414188;
+  color: #fff;
+}
+
 .menu-link-color {
   color: skyblue !important;
 }
 
 .date-time {
+  margin-bottom: 70px;
   margin: 35px;
 }
 
@@ -33,19 +39,17 @@ button:hover {
   color: #000;
 }
 
-.header {
+.sub-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 15px;
-  padding: 15px;
-  border: 2px solid #000;
+  padding: 8px 15px;
   border-radius: 5px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: 400;
+.logo-img {
+  width: 100px;
 }
 
 .menu-list {
@@ -59,21 +63,18 @@ button:hover {
   padding: 0 20px;
 }
 
-.menu-items:not(:last-child) {
-  border-right: 2px solid #000;
-}
 
 .nav-items {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
-main {
+.main-section {
   flex: 1;
-  margin: 0 15px;
-  display: flex;
+  margin: 0;
   flex-direction: column;
   justify-content: center;
+  background: #a99f78;
 }
 
 #home {
@@ -87,6 +88,11 @@ main {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 15px;
+  color: #414188;
+}
+
+.real-date-time {
+  color: #292323;
 }
 
 .books-container {
@@ -94,7 +100,6 @@ main {
   padding: 5px;
   width: 70%;
   margin: 0 auto;
-  border: 2px solid #000;
   border-radius: 5px;
 }
 
@@ -108,9 +113,16 @@ main {
 .book button {
   padding: 5px 10px;
   font-size: 12px;
-  border: 2px solid #000;
+  border: 2px solid #414188;
   border-radius: 5px;
   cursor: pointer;
+  background: #414188;
+  color: #fff;
+}
+
+.no-books-notification {
+  text-align: center;
+  font-style: italic;
 }
 
 .sub-book {
@@ -135,9 +147,8 @@ main {
 }
 
 .form-container {
-  background-color: #fff;
   padding: 5px;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -150,8 +161,19 @@ main {
 .book-form input {
   padding: 15px;
   font-size: 16px;
-  border: 2px solid #000;
-  border-radius: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #240606;
+  color: #312828;
+}
+
+.book-form input::placeholder {
+  color: #fff;
+}
+
+.book-form input:focus {
+  outline: none;
+  border-color: #fff;
 }
 
 .book-form button {
@@ -159,15 +181,21 @@ main {
   padding: 5px;
   width: 20%;
   font-size: 20px;
-  border: 2px solid #000;
+  border: 2px solid #414188;
   border-radius: 5px;
   cursor: pointer;
-  background: #f6f1f1;
+  color: #fff;
+  background: #414188;
+}
+
+.add-book {
+  color: #271b1b;
 }
 
 #contact {
   display: none;
   padding: 15px 0;
+  color: #271b1b;
 }
 
 #contact h2 {
@@ -175,10 +203,10 @@ main {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 40px;
+  color: #271b1b;
 }
 
 .contact-container {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,19 +230,29 @@ main {
 }
 
 .footer {
+  background: #414188;
+  color: #fff;
+}
+
+.sub-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 15px;
   padding: 15px;
-  font-size: 20px;
-  font-weight: 400;
-  border: 2px solid #000;
-  border-radius: 5px;
+}
+
+.footer-text {
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.footer-site {
+  color: #a6a6b0;
 }
 
 @media screen and (max-width: 768px) {
-  .header {
+  .sub-header {
     border: none;
     margin: 0;
     padding: 0;
@@ -262,7 +300,7 @@ main {
     display: none;
   }
 
-  .header .menu-list.active {
+  .sub-header .menu-list.active {
     display: flex;
     position: absolute;
     align-items: center;
@@ -274,7 +312,7 @@ main {
     z-index: 100;
     padding-top: 108px;
     gap: 52px;
-    background: #000000db;
+    background: #1d293edb;
   }
 
   .menu-items {
@@ -291,11 +329,20 @@ main {
     color: #fff;
   }
 
+  .page {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .books-container {
     width: 100%;
   }
 
   .form-container {
     width: 100%;
+  }
+
+  .footer-text {
+    font-size: 13px;
   }
 }

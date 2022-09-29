@@ -8,9 +8,6 @@
 
 [Click to see Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
 
-## Screenshot
-
-![Screenshot](./img/Screenshot.png)
 
 
 
