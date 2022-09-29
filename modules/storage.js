@@ -1,42 +1,27 @@
 const booksList = document.querySelector('.books-container');
-// const title = document.querySelector('#title');
-// const author = document.querySelector('#author');
-// const formSubmit = document.querySelector('.book-form');
+
 
 export let booksArray = []; // eslint-disable-line
 
 export const addBook = () => {
-  let booksCode = '';
-  booksArray.forEach((element, index) => {
-    const { title, author } = element;
-    if (index % 2 === 0) {
-      booksCode += `
-        <div class="book changeColor">
+  const allBooks = booksArray.map((book, index) => (
+
+    `<div class="book changeColor" id=${index}>
             <div class="sub-book">
-              <p>"${title}" by</p>
-              <p>${author}</p>
+              <p>"${book.title}" by</p>
+              <p>${book.author}</p>
             </div>
-            <button type="submit" class="delete" onclick='removeBook("${title}")'>Remove</button>
-        </div>
-            `;
-    } else {
-      booksCode += `
-        <div class="book">
-          <div class="sub-book">
-            <p>"${title}" by</p>
-            <p>${author}</p>
-          </div>
-          <button type="submit" class="delete" onclick='removeBook("${title}")'>Remove</button>
-        </div>
-            `;
-    }
-  });
-  booksList.innerHTML = booksCode;
+            <button type="submit" class="delete" onclick='removeBook("${book.title}", "${book.author}")'>Remove</button>
+        </div>`
+
+  ));
+  booksList.innerHTML = allBooks;
   localStorage.setItem('booksData', JSON.stringify(booksArray));
 };
 
-window.removeBook = (title) => {
-  booksArray = booksArray.filter((elem) => elem.title !== title);
+window.removeBook = (title, author) => {
+  console.log(author, title)
+  booksArray = booksArray.filter((elem) => elem.title !== title || elem.author !== author);
   addBook();
 };
 
