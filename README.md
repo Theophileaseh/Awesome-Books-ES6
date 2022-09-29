@@ -8,6 +8,10 @@
 
 [Click to see Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
 
+## Screenshot
+| Homepage |   Add Book Page |
+| ---------- | ----------- |
+ | ![homepage](img/1.png) | ![addbookpage](img/2.png) |
 
 
 
