@@ -6,7 +6,7 @@
 
 ## Website Link
 
-[Click to see Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
+[Visit Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
 
 ## Screenshot
 | Homepage |   Add Book Page |
