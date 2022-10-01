@@ -6,11 +6,12 @@
 
 ## Website Link
 
-[Click to see Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
+[Visit Website](https://theophileaseh.github.io/Awesome-Books-ES6/)
 
 ## Screenshot
-
-![Screenshot](./img/Screenshot.png)
+| Homepage |   Add Book Page |
+| ---------- | ----------- |
+ | ![homepage](img/1.png) | ![addbookpage](img/2.png) |
 
 
 
