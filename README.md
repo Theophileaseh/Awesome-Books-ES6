@@ -2,7 +2,7 @@
 
 # Awesome Books ES6
 
-> Awesome Books is a web application built using htm, css, javaScript, luxon and npm, used to store and display a list of books from various authors.
+> Awesome Books is a web application built using html, css, javaScript, luxon and npm, used to store and display a list of books from various authors.
 
 ## Website Link
 
