@@ -170,6 +170,7 @@ button:hover {
 .book-form input:focus {
   outline: none;
   border-color: #fff;
+  background: transparent;
 }
 
 .book-form button {
