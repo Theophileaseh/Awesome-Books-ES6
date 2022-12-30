@@ -248,6 +248,11 @@ button:hover {
   color: #a6a6b0;
 }
 
+.footer-site a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .sub-header {
     border: none;

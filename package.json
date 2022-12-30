@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "luxon": "^2.3.1"
+    "luxon": "^2.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
