@@ -19,6 +19,6 @@ p.innerText = DateTime.now().toLocaleString(
 
 footerYear.innerText = DateTime.now().toLocaleString(
   {
-    year: 'numeric'
+    year: 'numeric',
   },
 );
