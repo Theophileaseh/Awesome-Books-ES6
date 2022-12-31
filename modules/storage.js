@@ -29,7 +29,7 @@ window.removeBook = (title, author) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   const books = JSON.parse(localStorage.getItem('booksData'));
-  if (books === null) {
+  if (booksArray.length === 0) {
     booksArray = [
       {
         title: 'The Goods',

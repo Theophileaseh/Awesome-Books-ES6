@@ -3,13 +3,10 @@ import { booksArray, addBook } from './storage.js';
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const formSubmit = document.querySelector('.book-form');
-
-function alerts(message) {
-  // eslint-disable-next-line no-alert
-  alert(message);
-}
+const messageContainer = document.querySelector('.message-notification');
 
 formSubmit.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (title.value === '' || author.value === '') {
     event.preventDefault();
   }
@@ -24,13 +21,13 @@ formSubmit.addEventListener('submit', (event) => {
     && elem.author === bookInput.author));
 
   if (result.length !== 0) {
-    alerts('Sorry Book already exists');
+    messageContainer.innerHTML = 'Sorry Book already exists';
   } else {
     booksArray.push(bookInput);
     addBook();
     title.value = '';
     author.value = '';
 
-    alerts('Congratulations. Book added!');
+    messageContainer.innerHTML = 'Congratulations. Book added!';
   }
 });
