@@ -28,6 +28,8 @@ formSubmit.addEventListener('submit', (event) => {
     title.value = '';
     author.value = '';
 
+    localStorage.setItem('booksData', JSON.stringify(booksArray));
+
     messageContainer.innerHTML = 'Congratulations. Book added!';
   }
 });
