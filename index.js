@@ -2,7 +2,7 @@ import './modules/storage.js';
 import './modules/pageLoad.js';
 import './modules/formSubmit.js';
 import './modules/menu.js';
-import { DateTime } from './node_modules/luxon/src/luxon.js';
+import { DateTime } from './modules/luxon.js';
 // import './index.css';
 
 const p = document.querySelector('.real-date-time');
