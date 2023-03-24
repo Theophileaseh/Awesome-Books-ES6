@@ -13,7 +13,7 @@ export const addBook = () => {
             <button type="submit" class="delete" onclick='removeBook("${book.title}", "${book.author}")'>Remove</button>
         </div>`
 
-  ));
+  )).join('');
   if (booksArray.length === 0) {
     booksList.innerHTML = '<h3 class="no-books-notification">Sorry there are no books available</h3>';
   } else {
